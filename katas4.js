@@ -7,7 +7,7 @@ const bestThing = "The best thing about a boolean is even if you are wrong you a
 function kata1() {
     // implemente aqui o código
     let novoElemento = document.createElement('div')
-    novoElemento.textContent = JSON.stringify(gotCitiesCSV)
+    novoElemento.textContent = JSON.stringify(gotCitiesCSV.split(' '))
     document.body.appendChild(novoElemento)
     return gotCitiesCSV
 }
@@ -16,7 +16,7 @@ kata1();
 
 function kata2() {
     let novoElemento = document.createElement('div')
-    novoElemento.textContent = JSON.stringify(bestThing)
+    novoElemento.textContent = JSON.stringify(bestThing.split(' '))
     document.body.appendChild(novoElemento)
 
     return bestThing
@@ -37,10 +37,10 @@ kata3()
 
 function kata4() {
     let novoElemento = document.createElement('div')
-    novoElemento.textContent = JSON.stringify(gotCitiesCSV.split(' '))
+    novoElemento.textContent = JSON.stringify(lotrCitiesArray.join())
     document.body.appendChild(novoElemento)
 
-    return gotCitiesCSV
+    return lotrCitiesArray
 }
 
 kata4()
@@ -106,9 +106,9 @@ function kata8() {
 kata8()
 
 function kata9() {
-    
+// const lotrCitiesArray = ["Mordor","Gondor","Rohan","Beleriand","Mirkwood","Dead Marshes","Rhun","Harad"];
     let novoElemento = document.createElement('div')
-    let socorro = lotrCitiesArray.splice(6,2)
+    let socorro = lotrCitiesArray.splice(5,1)
     novoElemento.textContent = JSON.stringify(lotrCitiesArray)
     document.body.appendChild(novoElemento)
 
